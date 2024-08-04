@@ -8,8 +8,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../"))
 from app.servers.cloudflare5s_screenshot import Cloudflare5sScreenshotBypass
 
 # from
-url = "https://nopecha.com/demo/cloudflare"
-# url = 'https://chatgpt.com'
+# url = "https://nopecha.com/demo/cloudflare"
+url = 'https://chatgpt.com'
 # proxy_server = "http://45.127.248.127:5128"
 proxy_server = None
 cloudflare5s = Cloudflare5sScreenshotBypass(proxy_server)

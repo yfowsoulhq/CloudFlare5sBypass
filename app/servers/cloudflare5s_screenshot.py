@@ -17,11 +17,12 @@ file_suffix = "png"
 
 
 class Cloudflare5sScreenshotBypass:
-    def __init__(self, user_agent=DefaultUserAgent, proxy_server=None):
+    def __init__(self, user_agent=None, proxy_server=None):
         browser_path = "/usr/bin/google-chrome"
         options = ChromiumOptions()
         options.set_paths(browser_path=browser_path)
-        # print("user_agent", user_agent)
+        user_agent = user_agent or DefaultUserAgent
+        # print("user_agent", user_agent, DefaultUserAgent)
         if user_agent:
             options.set_user_agent(user_agent)
         if proxy_server:
