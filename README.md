@@ -57,7 +57,3 @@ docker compose run web python tests/test_v2.py
 | cookies    | dict   | 浏览器 cookie    |
 
 
-
-## 注意事项
-如果不使用代理服务器（proxy_server），则必须将该项目部署在需要绕过 Cloudflare 5s 盾的服务器上。否则，即使获取到 cf_clearance 值，也将无法适用。
-
